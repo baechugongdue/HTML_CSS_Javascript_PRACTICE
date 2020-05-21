@@ -4,19 +4,47 @@
 	<meta charset="utf-8">
 	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Insert title here</title>
+<title>Unit 4_images</title>
 </head>
 <body>
-	<h1>앵커 만들기</h1>
-	<p> 웹 문서가 너무 길 경우 필요한 곳마자 문서안에 이름을 붙여놓고 이동하는 링크를 만들수 있는데, 이 기능을 앵커라고 합니다.
+	<h1>Image Path
+	<img alt="image 1" src="images/cover.jpg">
+	<!--path is to the image in the same folder with html file-->	
+	<img alt="image 2" src="../download/images/first.jpg"> 
+	<!--path is to the image in the different folder with html file-->
+ 	<!--add ".." to show the uppder folder of the image file-->
+	<img alt="Ethernal Path" src="/web_study/ch03/images/fantasy.jpg">
+	<!--path is to show the ethernal path of the image-->
+	<img alt="Image link to internet" src="https://celebrityinsider.org/wp-content/uploads/2020/05/Kendall-Jenner-Khlo%C3%A9-Kardashian-NBA-Players.jpg">
+	<!--Do not use the link of image for commercial purpose-->
+		
+	<hr>
+	<!--breaks section-->
+		
+	<img alt="Original Size" src="images/gugudan.jpg"> <br>
+	<!--br breaks the sentence-->
+	<img alt="Changed size" src="images/gugudan.jpg" width="250px" height="250">
+	<!-- change the size with 'width' and 'height'-->
+	
+<hr>
+	
+	<h1>How to make anchors</h1>
+	<p> The HTML <a> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses
+		,locations in the same page, or anything else a URL can address. Content within each <a> should indicate the link's destination.
+	</p>
 	<ul id="menu">
 		<li><a href="#content1">Content1</a>
+		<!--takes you to where content1 is in the article-->
 		<li><a href="#content2">Content2</a>
+		<!--takes you to where content2 is in the article-->
 		<li><a href="#content3">Content3</a>
+		<!--takes you to where content3 is in the article-->
 	</ul>
 	
 	<h2 id="content1">Content1</h2>
+	<!--link 'content1' will take you here-->
 	<a href="#menu">Go to menu</a>
+	<!--this will take you to the menu above-->
 	<p>These days you can’t read anything online without being confronted with 
 	the opportunity to click on a link that will take you to something else online.
 	These days you can’t read anything online without being confronted with the opportu
@@ -43,7 +71,9 @@
 	nity to click on a link that will take you to something else online.</p>
 	
 	<h2 id="content2">Content2</h2>
+	<!--link 'content2' will take you here-->
 	<a href="#menu">Go to menu</a>
+	<!--this will take you to the menu above-->
 	<p>These days you can’t read anything online without being confronted with 
 	the opportunity to click on a link that will take you to something else online.
 	These days you can’t read anything online without being confronted with the opportu
@@ -70,7 +100,9 @@
 	nity to click on a link that will take you to something else online.</p>
 	
 	<h2 id="content3">Content3</h2>
+	<!--link 'content3' will take you here-->
 	<a href="#menu">Go to menu</a>
+	<!--this will take you to the menu above-->
 	<p>These days you can’t read anything online without being confronted with 
 	the opportunity to click on a link that will take you to something else online.
 	These days you can’t read anything online without being confronted with the opportu
@@ -96,6 +128,21 @@
 	These days you can’t read anything online without being confronted with the opportu
 	nity to click on a link that will take you to something else online.</p>
 	
+<hr>
+	<img src="images/five.jpg alt="announcement" usemap="#eventmap">
+	<!--usemap tag identifies centain area of images to take you to different page-->
+	<!--make an unique name of your usemap to take you to the map-->
+								     
+	<map name="eventmap">
 
+		<area shape="rect" coords="277,192,374,294" href="http://www.google.com" 
+		alt="go to google" target="blank">
+		<!--area shape 'rect' refers to rectangle of the image, shape 'circle' refers to circle area of the image-->
+		<!--coords mentions the exact location of the area you are assigning-->
+		<!--first two numbers are the upper left dot of the rectangle and the last two numbers are the lower right dot of the rectangle-->
+		<!--'target' pops up a new window of the link-->
+		<area shape="rect" coords="378,772,691,1164" href="http://www.yahoo.com"
+		alt="go to yahoo" target="blank">
+	</map>	
 </body>
 </html>
