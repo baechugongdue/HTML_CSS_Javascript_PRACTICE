@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Sign in Form</title>
+</head>
+<body>
+	<form action="login.jsp" method="post"> 
+	<!-- method="get" shows confidentials on ip address -->
+	<!-- jsp takes you to the next page -->
+		<fieldset>
+		<!-- The box you write your log in information -->
+			<legend>Login</legend>
+			<!-- title of box -->
+			<ul>
+			<!-- unordered list -->
+				<li>
+					<label for="id">ID</label>
+					<input type="text" title="ID" name="id">
+					<!-- input> the small box you type letters in -->
+				</li>
+				<li>
+					<label for="pw">Password</label>
+					<input type="text" title="PASSWORD" name="pw">						
+				</li>
+				<li>
+					<input type="submit" value="Sign In">
+					<!-- small submit button -->
+				</li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>
