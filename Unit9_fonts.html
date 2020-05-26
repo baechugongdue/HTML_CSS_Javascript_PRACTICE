@@ -27,20 +27,44 @@
 		<!--ellipsis shows .. for clipped texts-->
 		<!--clip cuts the unused texts-->
 		}
-	.content:hover{
+		.content:hover{
 		overflow:visible;
 		<!--when the curser lands on the texts, it shows the clipped texts-->
 		}
+		.container {
+				width:500px;
+				padding:10px;
+				border:1px solid #ccc;
+				line-height:30px;
+			}
+			.subject {
+				font-weight:700px;
+				font-size:larger;
+				color:#ad3000;}
+			}
+			.nobullet {
+				list-style-type:none;}
+		<!--delete bullets of the list-->
 	</style>
 </head>
 <body>
+	<h1>Text Align</h1>
 <p class="align-left"> Breaking news and analysis from TIME.com. Politics, world news, photos.</p>
 <p class="align-right"> Breaking news and analysis from TIME.com. Politics, world news, photos.</p>
 <p class="align-center"> Breaking news and analysis from TIME.com. Politics, world news, photos,</p>
 <p class="align-justify"> Breaking news and analysis from TIME.com. Politics, world news, photos </p>
 	
- <h2>Oat</h2>
+ 	<h2>Text Overflow</h2>
   <p class="content">The oat (Avena sativa), sometimes called the common oat, is a species of cereal grain grown for its seed, 
 	  which is known by the same name (usually in the plural, unlike other cereals and pseudocereals).</p>
+	
+	<div class="container">
+			<h1>Trend in web design </h1>
+			<ul class="nobullet">
+				<li><span class="subject">react.js</span> - optimize in different size </li>
+				<li><span class="subject">Flat Design </span> - 3D to 2D </li>
+				<li><span class="subject">Full screen background</span> - concentrate on content</li>
+			</ul>
+		</div>
 </body>
 </html>
