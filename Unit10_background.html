@@ -5,8 +5,10 @@
   <title>Background image</title>
   <style>
     div {
-	      position: relative;
-	      margin-bottom:20px;
+	      width:300px;
+	      height:auto;
+	      margin:20px auto;
+	      padding:20px;
 	    }
     button {
 	      width:140px;
@@ -29,7 +31,36 @@
    		background-repeat: no-repeat;
    		background-position: right;
     }
+    .bg1{
+	    background:url('images/bg4.jpg') no-repeat left top;
+	    background-size:auto;
+		}
     
+    .bg2{
+	    background:url('images/bg4.jpg') no-repeat left top;
+	    background-size:200px 150px;
+		}
+    	
+    .bg3{
+	    background:url('images/bg4.jpg') no-repeat left top;
+	    background-size:60% 40%;
+		}
+    	
+    .bg4{
+	    background:url('images/bg4.jpg') no-repeat left top;
+	    background-size:contain;
+		}	
+    
+    .bg5{
+	    background:url('images/bg4.jpg') no-repeat left top;
+	    background-size:cover;
+		}	
+    	
+    .bg6{
+	    background:url('images/bg4.jpg') no-repeat left top;
+	    background-size:100% 100%
+		}
+
   </style>
 </head>
 <body>
@@ -43,5 +74,11 @@
       IDEA
     </button>
   </div>
+<div class="bg1"></div>
+	<div class="bg2"></div>
+	<div class="bg3"></div>
+	<div class="bg4"></div>
+	<div class="bg5"></div>
+	<div class="bg6"></div>
  </body>
 </html>
