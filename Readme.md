@@ -1,6 +1,6 @@
 Description 
 
-This material is for students to practice how to code in HTML, CSS and JAVASCRIPT and design a website
+This material is for students to practice how to code in HTML and CSS and design a website
 
 All units are created with useful tags and fundamental principles coding in HTML, CSS and Javascript
 
